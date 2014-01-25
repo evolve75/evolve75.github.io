@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""First Post""
+title: "First Post"
 date: 2014-01-24 22:30:17 -0500
 comments: true
 categories: rant
