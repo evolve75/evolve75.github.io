@@ -1,6 +1,8 @@
 evolve75.github.io
 ==================
 
+[![Build and deploy](https://github.com/evolve75/evolve75.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/evolve75/evolve75.github.io/actions/workflows/hugo.yml)
+
 Source for [evolve75.github.io](http://evolve75.github.io/) / [www.anupamsg.me](https://www.anupamsg.me/).
 
 Built with [Hugo](https://gohugo.io) using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
