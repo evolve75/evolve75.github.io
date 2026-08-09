@@ -80,12 +80,15 @@ substantially simpler than the WordPress one:
    collection — trivial given post count, but the URL should keep working.
 6. **Preserve `/atom.xml`** — Hugo supports Atom output natively; configure it to match the
    existing feed path exactly.
-7. **Decide on the dead-infrastructure items** (Google Analytics UA ID, Disqus stub, Delicious/
-   Pinboard/Google+ widgets) — confirm dropping them (recommended, see above) before finalizing,
-   since this is the one area where "no content change" and "don't carry forward broken 2014-era
-   theme cruft" could be read as being in tension. If Analytics is wanted going forward, that would
-   need a fresh GA4 property, not a revival of the dead UA one — a separate decision, not assumed
-   here.
+7. **Dead-infrastructure items — decided (2026-08-09): drop all of them.** Confirmed by the user.
+   The Hugo rewrite carries forward none of: the Google Analytics Universal Analytics tracking ID
+   (`UA-326849-8` — non-functional since Google's July 2023 UA sunset regardless of platform), the
+   Disqus include/stub (never actually configured with a shortname, never worked), or the
+   Delicious/Pinboard/Google+ sidebar widgets (all reference discontinued-in-their-2010s-form
+   services). None of these are "content" in the sense the no-content-change constraint protects —
+   they're broken theme plumbing from 2014. If analytics is wanted going forward, that's a fresh
+   GA4 property as a separate, later decision — not a revival of the dead UA one, and not assumed
+   as part of this migration.
 8. **Build and diff against the current `master` output** — compare generated URLs, confirm
    `/`, `/blog/2014/01/24/first-post/`, `/blog/archives/`, and `/atom.xml` all resolve with
    equivalent content to what's live today.
