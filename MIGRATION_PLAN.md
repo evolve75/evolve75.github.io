@@ -1,6 +1,12 @@
 # Framework migration: Octopress → Hugo
 
-**Status: planning only. No migration has started, no content has changed.**
+**Status: complete and live (2026-08-09).** Executed, pushed, and verified against the live site.
+No content changed. The rest of this document is kept as the planning/execution record.
+
+**Note:** this document refers to `master` throughout, since that was the branch name at the time
+of planning and execution. `master` was renamed to `main` immediately after (via GitHub's branch
+rename, which also updated the default branch and the Pages source config automatically) — read
+`master` below as `main` for anything current.
 
 ## Scope
 

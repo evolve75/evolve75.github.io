@@ -19,11 +19,11 @@ hugo --minify
 
 ## Deploying
 
-The `master` branch holds the compiled site output that GitHub Pages serves directly (this is a
-`<user>.github.io` repo, so it serves from `master` root, no `gh-pages` branch). To publish:
+The `main` branch holds the compiled site output that GitHub Pages serves directly (this is a
+`<user>.github.io` repo, so it serves from `main` root, no `gh-pages` branch). To publish:
 
 ```sh
 cd hugo && hugo --minify
 cd ..
-# copy hugo/public/* into the master branch's root, preserving CNAME
+# copy hugo/public/* into the main branch's root, preserving CNAME
 ```
