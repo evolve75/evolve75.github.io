@@ -1,0 +1,46 @@
+baseURL = 'https://www.anupamsg.me/'
+locale = 'en-us'
+title = "Evolve's Github Corner."
+theme = 'PaperMod'
+
+[params]
+  description = "A kitchen sink, and maybe a blog."
+  author = "Anupam Sengupta"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = false
+
+[params.homeInfoParams]
+  Title = "Evolve's Github Corner."
+  Content = "A kitchen sink, and maybe a blog."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/evolve75"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/evolve75"
+
+[[params.socialIcons]]
+  name = "rss"
+  url = "/atom.xml"
+
+[permalinks]
+  blog = "/blog/:year/:month/:day/:title/"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  baseName = "atom"
+  mediaType = "application/rss+xml"
+
+[[menu.main]]
+  name = "Archives"
+  url = "/blog/archives/"
+  weight = 10
