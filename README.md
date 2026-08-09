@@ -18,9 +18,11 @@ Actions-deployed one — see `MIGRATION_PLAN.md` for the record of both changes.
 ## Building locally
 
 ```sh
-git submodule update --init
-hugo --minify
+make serve   # local dev server with drafts, http://localhost:1313
+make build   # one-off build into ./public, same flags as CI
 ```
+
+See `make help` for the full target list (new posts, theme updates, etc.).
 
 ## Deploying
 
