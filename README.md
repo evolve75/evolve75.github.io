@@ -1,9 +1,25 @@
 evolve75.github.io
 ==================
 
-Github Pages site source for Evolve75's site ([evolve75.github.io](http://evolve75.github.io/ "Evolve75's site")).
+Source for [evolve75.github.io](http://evolve75.github.io/) / [www.anupamsg.me](https://www.anupamsg.me/).
 
-This site is built with [Hugo](https://gohugo.io) using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+Built with [Hugo](https://gohugo.io) using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+theme. Single-branch repo — `main` holds only the Hugo source (content, config, theme submodule).
+GitHub Actions (`.github/workflows/hugo.yml`) builds and deploys on every push via GitHub Pages'
+native Actions integration — no compiled output is ever committed, and there's no second branch to
+keep in sync.
 
-This `main` branch holds the compiled site output that GitHub Pages serves directly. The actual
-Hugo project (content, config, theme) lives on the `source` branch, under `hugo/`.
+Formerly built with Octopress; migrated to Hugo (framework-only, no content change), then
+consolidated from a two-branch (`main` + `source`) layout to this single-branch,
+Actions-deployed one — see `MIGRATION_PLAN.md` for the record of both changes.
+
+## Building locally
+
+```sh
+git submodule update --init
+hugo --minify
+```
+
+## Deploying
+
+Automatic — push to `main` and GitHub Actions builds and deploys. No manual steps.
