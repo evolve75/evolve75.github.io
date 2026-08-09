@@ -18,6 +18,10 @@ theme = 'PaperMod'
   Title = "Evolve's Github Corner."
   Content = "A kitchen sink, and maybe a blog."
 
+[params.assets]
+  favicon = "favicon.png"
+  favicon16x16 = "favicon.png"
+
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/evolve75"
